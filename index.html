@@ -1,0 +1,43 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>distance chaining</title>
+	<meta charset="utf-8" />
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="bower_components/leaflet/dist/leaflet.css" />
+	<link rel="stylesheet" href="bower_components/bootswatch/paper/bootstrap.min.css" />
+	<link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-3 col-lg-4">
+				<h4>Trip Roughness</h4>
+				<div class="info legend leaflet-control">
+					<i style="background:#FFEDA0"></i> < 1<br>
+					<i style="background:#FED976"></i> 1 to 10<br>
+					<i style="background:#FEB24C"></i> 10 to 20<br>
+					<i style="background:#FD8D3C"></i> 20 to 30<br>
+					<i style="background:#FC4E2A"></i> 30 to 40<br>
+					<i style="background:#E31A1C"></i> 40 to 50<br>
+					<i style="background:#BD0026"></i> 50 to 80<br>
+					<i style="background:#800026"></i> > 80</div>
+			</div>
+			<div class="col-md-9 col-lg-8">
+				<div id="map"></div>
+			</div>
+		</div>
+	</div>
+
+
+	<script src="bower_components/jquery/dist/jquery.min.js"></script>
+	<script src="bower_components/d3/d3.min.js"></script>
+	<script src="bower_components/leaflet/dist/leaflet.js"></script>
+	<script src="bower_components/turf/turf.min.js"></script>
+	<script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+
+	<script src="js/stuff.js"></script>
+</body>
+</html>
